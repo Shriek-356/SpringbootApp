@@ -28,7 +28,7 @@ public class ApiUserController {
     UserService userService;
 
 
-    @PostMapping("/login")
+    /*@PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody Map<String,String> params) {
         try {
             if (authService.authenticate(params.get("username"), params.get("password"))) {
@@ -58,6 +58,6 @@ public class ApiUserController {
             return ResponseEntity.status(500).body("Lỗi khi tạo JWT");
         }
 
-    }
+    }*/
 
 }
