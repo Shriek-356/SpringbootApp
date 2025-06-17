@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for springbootapp-1cfdua on 2025-06-17T11:19:54Z
+# fly.toml app configuration file generated for springbootapp on 2025-06-17T12:00:24Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'springbootapp-1cfdua'
-primary_region = 'syd'
+app = 'springbootapp'
+primary_region = 'sin'
 
 [build]
 
