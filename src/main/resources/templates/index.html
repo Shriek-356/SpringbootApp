@@ -5,7 +5,7 @@
     <title>Trang Chủ</title>
 </head>
 <body>
-<h1>Xin chào đến với trang chính</h1>
+<h1>Xin chào đến với trang chính test deloy</h1>
 <div th:if="${currentUser != null}" class="alert alert-success text-center">
     <strong>Xin chào, <span th:text="${currentUser.firstName} + ' ' + ${currentUser.lastName}"></span>!</strong>
     <div class="nav-item" sec:authorize="isAuthenticated()">
