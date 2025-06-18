@@ -16,10 +16,10 @@ public class IndexController {
 
     @GetMapping("/")
     public String index(Model model, Principal principal) {
-        /*if (principal != null){
+        if (principal != null){
             User u = userService.getUserByUsername(principal.getName());
             model.addAttribute("currentUser", u);
-        }*/
+        }
         return "index";
     }
 }

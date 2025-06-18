@@ -8,7 +8,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class UserController {
 
     @GetMapping("/login")
-    public String loginView() {
+    public String loginView(Principal principal) {
+        if(principal != null) {
+            return "redirect:/"; //Chuyen huong ve trang chu neu da dang nhap roi
+        }
         return "login";
     }
 }
