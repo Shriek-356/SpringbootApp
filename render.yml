@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: springbootapp
+    runtime: java
+    repo: https://github.com/Shriek-356/SpringbootApp
+    branch: main
+    plan: free
+    buildCommand: ./mvnw clean package
+    startCommand: java -jar target/Test-0.0.1-SNAPSHOT.jar
+
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
