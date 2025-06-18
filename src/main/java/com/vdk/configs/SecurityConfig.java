@@ -83,6 +83,7 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable()) // Disable CSRF nếu test API/ giao diện đơn giản
                 .authorizeHttpRequests(auth -> auth
+                        .requestMatcher("/login").anonymous()
                         .requestMatchers("/").authenticated()
                         .requestMatchers("/api/hello").hasRole("Patient")
                         .anyRequest().permitAll() // Còn lại yêu cầu đăng nhập
